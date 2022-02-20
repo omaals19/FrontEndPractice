@@ -1,7 +1,11 @@
 import React from "react";
-import { Explanation } from "./components/Explanation";
+
+import { Trying } from "./components/Trying";
+import { Explanation } from "./components/explanation";
+import { Menu } from "./components/Menu";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import * as ReactDOM from "react-dom";
+import './index.css'
 
 console.log("here");
 
@@ -17,7 +21,7 @@ ReactDOM.render(
         }}
       >
         <Routes>
-          <Route path="/" exact element={<Explanation />} />
+          <Route path="/" exact element={<Menu />} />
         </Routes>
       </div>
     </HashRouter>
