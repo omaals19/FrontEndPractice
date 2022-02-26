@@ -20,9 +20,15 @@ ReactDOM.render(
           gridTemplateRows: "900px auto",
         }}
       >
-        <Routes>
-          <Route path="/" exact element={<Menu />} />
-        </Routes>
+        <Menu>
+          <Routes>
+            <Route path="/" exact element={<div />} /> // pass page components
+            // in element prop, i substituded it with div
+            <Route path="/About_us" element={<div />} />
+            <Route path="/Stream" element={<div />} />
+            <Route path="/Gps" element={<div />} />
+          </Routes>
+        </Menu>
       </div>
     </HashRouter>
   </React.StrictMode>,
