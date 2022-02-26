@@ -1,11 +1,11 @@
 import React from "react";
 
 import { Trying } from "./components/Trying";
-import { Explanation } from "./components/explanation";
+import { Explanation } from "./components/Explanation";
 import { Menu } from "./components/Menu";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import * as ReactDOM from "react-dom";
-import './index.css'
+import "./index.css";
 
 console.log("here");
 
@@ -20,9 +20,15 @@ ReactDOM.render(
           gridTemplateRows: "900px auto",
         }}
       >
-        <Routes>
-          <Route path="/" exact element={<Menu />} />
-        </Routes>
+        <Menu>
+          <Routes>
+            <Route path="/" exact element={<div />} /> // pass page components
+            // in element prop, i substituded it with div
+            <Route path="/About_us" element={<div />} />
+            <Route path="/Stream" element={<div />} />
+            <Route path="/Gps" element={<div />} />
+          </Routes>
+        </Menu>
       </div>
     </HashRouter>
   </React.StrictMode>,
