@@ -1,11 +1,11 @@
 import React from "react";
 
 import { Trying } from "./components/Trying";
-import { Explanation } from "./components/explanation";
+import { Explanation } from "./components/Explanation";
 import { Menu } from "./components/Menu";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import * as ReactDOM from "react-dom";
-import './index.css'
+import "./index.css";
 
 console.log("here");
 
