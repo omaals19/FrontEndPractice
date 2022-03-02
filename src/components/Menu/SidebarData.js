@@ -29,4 +29,10 @@ export const SidebarData = [
         icon: <MdIcons.MdGpsFixed/>,
         cName: 'nav-text'
     },
+    {
+        title: 'Omar',
+        path: '/Omar',
+        icon: <MdIcons.MdGpsFixed/>,
+        cName: 'nav-text'
+    },
 ]
