@@ -14,6 +14,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=lato&display=swap');
 
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+#root {
+	height: 100%;
+	width: 100%;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,7 +32,7 @@
 }
 .home, .aboutus, .stream, .gps {
   display: flex;
-  height: 90vh;
+  height: 100%;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
