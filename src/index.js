@@ -12,6 +12,7 @@ import "./index.css";
 import { createStore } from "redux";
 import { counterReducer } from "./Reducers";
 import store2 from "./Reducers/counterReducer";
+import UserContainer from "./components/Redux-thunk-axios/UserContainer";
 
 console.log("here");
 
@@ -31,7 +32,7 @@ ReactDOM.render(
           <Routes>
             <Route path="/" exact element={<div />} /> // pass page components
             // in element prop, i substituded it with div
-            <Route path="/About_us" element={<div />} />
+            <Route path="/About_us" element={<UserContainer />} />
             <Route path="/Stream" element={<Stream />} />
             <Route path="/Gps" element={<Gps />} />
             <Route path="/Omar" element={<Omar />} />
