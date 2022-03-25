@@ -10,17 +10,18 @@ import * as ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import "./index.css";
 import { createStore } from "redux";
-import { counterReducer } from "./Reducers";
+import { counterReducer, userReducer } from "./Reducers";
 import store2 from "./Reducers/counterReducer";
+import store1 from "./components/Redux-thunk-axios/store";
 import UserContainer from "./components/Redux-thunk-axios/UserContainer";
 
 console.log("here");
 
-export const store = createStore(counterReducer);
+// export const store = createStore(userReducer);
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Provider store={store}>
+      <Provider store={store1}>
         <Menu />
         <div
           style={{

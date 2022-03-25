@@ -1,2 +1,3 @@
 export { default as counterReducer } from "./counterReducer";
-export { default as reducer } from "./counterReducer";
+export { default as userReducer } from "./userReducer";
+
