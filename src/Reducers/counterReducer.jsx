@@ -4,6 +4,8 @@ const counterReducer = (count = 0, action) =>{
             return count + 1
         case 'DECREMENT':
             return count - 1
+        default:
+            return count
     }
 }
 export default counterReducer;
